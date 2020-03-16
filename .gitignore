@@ -111,4 +111,5 @@ data/**
 ._*.tsv
 ._*.txt
 ._*.md
+._*.pdf
 tmp_large_data/**
