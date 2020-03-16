@@ -14,13 +14,7 @@ sh get_data.sh
 ```
 
 ### Results
-`results/`: This directory contains three subdirectories:
-1. `LASSO_KNN_results`
-2. `DNN_results`
-3. `Beta_Analysis_Results`
-
-### Figures/Tables
-`figures_tables/`: This directory contains all the pre-generated figures and tables.
+PDF versions of the figures can be found in `figures/`. The notebook that generates the figures can be found at `src/make_figures.ipynb`.
 
 ## Section 2: Regenerating the Results and Figures/Tables
 ### Dependencies
