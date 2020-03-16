@@ -80,10 +80,10 @@ This function output 4 files into the directory `user_results` in a subdirectory
 
 ## Section 4: Additional Information
 ### Support
-For support please contact Jake Canfield at canfie44@msu.edu or [Chris Mancuso](https://twitter.com/ChrisAMancuso) at mancus16@msu.edu.
+For support please contact [Chris Mancuso](https://twitter.com/ChrisAMancuso) at mancus16@msu.edu or Jake Canfield at canfie44@msu.edu.
 
 ### License
-See [LICENSE.md](https://github.com/krishnanlab/SampleLasso-dev/LICENSE.md) for license information for all data used in this project.
+See [LICENSE.md](https://github.com/krishnanlab/Expresto/blob/master/LICENSE.md) for license information for all data used in this project.
 
 ### Citation
 If you use this work, please cite:  
@@ -92,15 +92,25 @@ If you use this work, please cite:
 ### Authors
 Christopher A Mancuso#, Jake Canfield#, Deepak Singla, Arjun Krishnan*
 
-\# These authors are joint first authors
-\* General correspondence should be addressed to AK at arjun@msu.edu.
+/# These authors are joint first authors, and /* general correspondence should be addressed to AK at arjun@msu.edu.
 
 ### Funding
-This work was primarily supported by US National Institutes of Health (NIH) grants R35 GM128765 to AK and in part by MSU start-up funds to AK and NIH F32 Fellowship SOMENUMBERHERE for CM.
+This work was primarily supported by US National Institutes of Health (NIH) grants R35 GM128765 to AK and in part by MSU start-up funds to AK and NIH F32 Fellowship F32GM134595 for CM.
 
 ### Acknowledgements
 We are grateful for the support from the members of the [Krishnan Lab](https://www.thekrishnanlab.org).
 
 ### Referecnes
 
-Down here cite ARCHS4 and GEO, maybe fRMA and custom CDF. 
+#### ARCHS4
+* Lachmann A, Torre D, Keenan AB, Jagodnik KM, Lee HJ, Wang L, Silverstein MC, Ma’ayan A. Massive mining of publicly available RNA-seq data from human and mouse. Nature Communications 9. Article number: 1366 (2018), doi:10.1038/s41467-018-03751-6 
+
+#### NCBI GEO
+* Edgar R, Domrachev M, Lash AE. Gene Expression Omnibus: NCBI gene expression and hybridization array data repository Nucleic Acids Res. 2002 Jan 1;30(1):207-10
+
+* Barrett T, Wilhite SE, Ledoux P, Evangelista C, Kim IF, Tomashevsky M, Marshall KA, Phillippy KH, Sherman PM, Holko M, Yefanov A, Lee H, Zhang N, Robertson CL, Serova N, Davis S, Soboleva A. NCBI GEO: archive for functional genomics data sets--update. Nucleic Acids Res. 2013 Jan;41(Database issue):D991-5.
+
+#### URSA-HD
+* Lee YS, Krishnan A, Oughtred R, Rust J, Chang CS, Ryu J, Kristensen VN, Dolinski K, Theesfeld CL, Troyanskaya OG. (2019) A Computational Framework for Genome-wide Characterization of the Human Disease Landscape Cell Systems.
+
+* Lee YS, Krishnan A, Zhu Q, Troyanskaya OG. (2013) Ontology-aware classification of tissue and cell-type signals in gene expression profiles across platforms and technologies. Bioinformatics
