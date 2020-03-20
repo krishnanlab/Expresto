@@ -38,16 +38,16 @@ The parallelization of the code was tested with Slurm on the high performance co
 2. `main_utls.py`: Helper function for main.py
 3. `main_slurm.py`: A python script that will submit numerous jobs through slurm
 4. `run_GeneKNN_val_jobs.sh`, `run_GeneLasso_val_job.sh`, `run_SampleKNN_val_jobs.sh`, `run_SampleLasso_val_job.sh` are scripts that start running the relevant jobs.
-5. `main_knitting`: Combines all predictions for one hyperparameter set into one file
-6. `main_evalautions`: Makes a file that has evaluations for different metrics
+5. `main_knitting.py`: Combines all predictions for one hyperparameter set into one file
+6. `main_evalautions.py`: Makes a file that has evaluations for different metrics
 
 ### Running DNN code
 1. `DNN_main.py`: Main script that generates imputed values, and makes the evaluation file
 2. `DNN_slurm.py`: A python script that submits all relevant DNN jobs.
 
 ### Running Beta Analysis code
-1. `beta_main`: Main script that generates imputed values
-2. `betas_slurm`: A python script that submits the jobs through slurm
+1. `beta_main.py`: Main script that generates imputed values
+2. `betas_slurm.py`: A python script that submits the jobs through slurm
 3. `betas_knitting_evals_move.py`: This combines all predictions for one hyperparameter set into one file and make a file for evaluations of different metrics 
 
 
