@@ -1,5 +1,5 @@
 # Expresto
-This repository contains data and code to generate the results and reproduce the figures and tables found in [_A Flexible, Interpretable, and Accurate Approach for Imputing the Expression of Unmeasured Genes_](https://doi.org/10.1101/2020.03.30.016675) (submitted for review). This work introduces a new method for imputing gene expression. The method introduced, SampleLASSO, uses the LASSO machine learning algorithm in a way that captures context specific biologically relevant information to guide imputation. 
+This repository contains data and code to generate the results and reproduce the figures and tables found in [_A Flexible, Interpretable, and Accurate Approach for Imputing the Expression of Unmeasured Genes_](https://doi.org/10.1101/2020.03.30.016675) `bioRxiv doi.org/10.1101/2020.03.30.016675` (submitted for review). This work introduces a new method for imputing gene expression. The method introduced, SampleLASSO, uses the LASSO machine learning algorithm in a way that captures context specific biologically relevant information to guide imputation. 
 
 This repo provides: 
 1. The data, results, and figures presented in the manuscript.
