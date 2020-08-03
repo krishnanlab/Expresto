@@ -1,5 +1,5 @@
 # Expresto
-This repository contains data and code to generate the results and reproduce the figures and tables found in [_A Flexible, Interpretable, and Accurate Approach for Imputing the Expression of Unmeasured Genes_](https://www.needtopostsomewhere.com) (submitted for review). This work introduces a new method for imputing gene expression. The method introduced, SampleLASSO, uses the LASSO machine learning algorithm in a way that captures context specific biologically relevant information to guide imputation. 
+This repository contains data and code to generate the results and reproduce the figures and tables found in [_A Flexible, Interpretable, and Accurate Approach for Imputing the Expression of Unmeasured Genes_](https://www.biorxiv.org/content/10.1101/2020.03.30.016675v1.abstract) (submitted for review). This work introduces a new method for imputing gene expression. The method introduced, SampleLASSO, uses the LASSO machine learning algorithm in a way that captures context specific biologically relevant information to guide imputation. 
 
 This repo provides: 
 1. The data, results, and figures presented in the manuscript.
@@ -8,7 +8,7 @@ This repo provides:
 
 ## Section 1: Pre-computed Data, Results, and Figures/Tables
 ### Data
-The data used in this study (networks, embeddings, and genesets) is available on [Zenodo](https://zenodo.org/record/3711089#.Xm7ZLJNKgWo). To get the data run
+The data used in this study (networks, embeddings, and genesets) is available on [Zenodo](https://zenodo.org/record/3971092#.XyiDpvhKjlw). To get the data run
 ```
 sh get_data.sh
 ```
@@ -43,7 +43,20 @@ The parallelization of the code was tested with Slurm on the high performance co
 
 ### Running DNN code
 1. `DNN_main.py`: Main script that generates imputed values, and makes the evaluation file
-2. `DNN_slurm.py`: A python script that submits all relevant DNN jobs.
+2. `DNN_slurm.py`: A python script that submits all relevant DNN jobs
+
+### Running GAN code
+1. `GGAN_main.py`: Main script that generates imputed values, and makes the evaluation file
+2. `GGAN_slurm.py`: A python script that submits all relevant GGAN jobs
+3. `weightnorm.py`: This a utility file for `GGAN_mian.py`
+
+### Running SEEK data code
+1. `seek_*.py`: These files generate the results, where the * is replaced with an identifer for a given imputation method
+2. `seek_slurm.py`: A python script that submits all relevant SEEK jobs
+
+### Running Normalization code
+1. `Normalization_Analysis.py`: Main script that generates normalization analysis results
+2. `Normalization_Analysis.sb`: An sbatch file that allocates a slurm job for normalization script
 
 ### Running Beta Analysis code
 1. `beta_main.py`: Main script that generates imputed values
@@ -105,6 +118,10 @@ We are grateful for the support from the members of the [Krishnan Lab](https://w
 * Barrett T, Wilhite SE, Ledoux P, Evangelista C, Kim IF, Tomashevsky M, Marshall KA, Phillippy KH, Sherman PM, Holko M, Yefanov A, Lee H, Zhang N, Robertson CL, Serova N, Davis S, Soboleva A. NCBI GEO: archive for functional genomics data sets--update. Nucleic Acids Res. 2013 Jan;41(Database issue):D991-5.
 
 #### URSA-HD
-* Lee YS, Krishnan A, Oughtred R, Rust J, Chang CS, Ryu J, Kristensen VN, Dolinski K, Theesfeld CL, Troyanskaya OG. (2019) A Computational Framework for Genome-wide Characterization of the Human Disease Landscape Cell Systems.
+* Lee YS, Krishnan A, Oughtred R, Rust J, Chang CS, Ryu J, Kristensen VN, Dolinski K, Theesfeld CL, Troyanskaya OG. (2019) A Computational Framework for Genome-wide Characterization of the Human Disease Landscape Cell Systems 8(2):P152-162 DOI: 10.1016/j.cels.2018.12.010
 
-* Lee YS, Krishnan A, Zhu Q, Troyanskaya OG. (2013) Ontology-aware classification of tissue and cell-type signals in gene expression profiles across platforms and technologies. Bioinformatics
+* Lee YS, Krishnan A, Zhu Q, Troyanskaya OG. (2013) Ontology-aware classification of tissue and cell-type signals in gene expression profiles across platforms and technologies. Bioinformatics 29(23):3036-44 DOI https://doi.org/10.1093/bioinformatics/btt529
+
+#### SEEK
+* Zhu A, Wong AK, Krishnan A, Aure MR, Tadych A, Zhang R, Corney DC, Greene CS, Bongo LA, Kristensen VN, Charikar M, Li K & Troyanskaya OG (2015) Targeted exploration and analysis of large cross-platform human transcriptomic compendia Nature Methods 12(3):211-4 DOI: 10.1038/nmeth.3249
+

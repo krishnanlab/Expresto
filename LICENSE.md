@@ -13,6 +13,10 @@ https://opendatacommons.org/licenses/odbl/1.0/
 ### URSA-HD
 http://ursahd.princeton.edu/help
 
+### SEEK
+No license is found on the SEEK website
+http://seek.princeton.edu/
+
 
 
 

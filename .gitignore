@@ -106,6 +106,8 @@ venv.bak/
 data/**
 ._*.py
 ._*.sh
+._*.sb
+._*.txt
 ._*.R
 ._*.csv
 ._*.tsv

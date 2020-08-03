@@ -8,6 +8,6 @@ else
 	mkdir data
 fi
 
-wget https://zenodo.org/record/3711089/files/2020-03-14-data.tar.gz
-tar -xvzf 2020-03-14-data.tar.gz -C data --strip-components=1
-rm -f 2020-03-14-data.tar.gz
+wget https://zenodo.org/record/3971092/files/2020-08-03-data.tar.gz
+tar -xvzf 2020-08-03-data.tar.gz -C data --strip-components=1
+rm -f 2020-08-03-data.tar.gz
