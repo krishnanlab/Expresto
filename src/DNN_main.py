@@ -44,8 +44,8 @@ parser.add_argument('-trn','--train_data', default = 'RNAseq', type = str,
     help = 'Training data to use')
 parser.add_argument('-tst','--test_data', default = 'Microarray', type = str, 
     help = 'Test data to use (this will be used for val data too)')
-parser.add_argument('-s','--save_dir', default = '../reproduce_results/DNN-save/', type = str, 
-    help = 'Where to save data')
+parser.add_argument('-gs','--genesplit',default = 'LINCS',type = str,
+    help = 'GPL96-570, LINCS')
 args = parser.parse_args()
 start_model       = args.start_model
 stop_model        = args.stop_model
@@ -55,11 +55,11 @@ momentum          = args.momentum
 arch              = args.arch
 train_data        = args.train_data
 test_data         = args.test_data
-save_dir          = args.save_dir
+genesplit         = args.genesplit
 
 ############################################################################################################  
 
-save_dir = save_dir + '/%s__%s/'%(train_data,test_data)
+save_dir = '../reproduce_results/DNN-save/%s__%s__%s/'%(train_data,test_data,genesplit)
 if optimize_type == 'adadelta':
     FN_end = 'opt--%s__lr--NA__mom--NA__arch--%s__start--%s__stop--%s'%(optimize_type,
                                                                        arch,start_model,stop_model)
@@ -74,7 +74,6 @@ else:
 
 ########## load the data and inds to slice data #####################
 print('Loading the data')
-# need to change this to /.. later
 data_dir = '../data/'
 trn_data = np.load(data_dir + '%s_Trn_Exp.npy'%train_data)
 val_data = np.load(data_dir + '%s_Val_Exp.npy'%test_data)
@@ -85,8 +84,8 @@ if test_data == 'RNAseq':
     val_data = np.arcsinh(val_data)
     tst_data = np.arcsinh(tst_data)
 # load the gene inds files
-Xgenes = np.loadtxt(data_dir + 'LINCS_Xgenes_inds.txt', dtype=int)
-ygenes = np.loadtxt(data_dir + 'LINCS_ygenes_inds.txt', dtype=int) 
+Xgenes = np.loadtxt(data_dir + '%s_Xgenes_inds.txt'%genesplit, dtype=int)
+ygenes = np.loadtxt(data_dir + '%s_ygenes_inds.txt'%genesplit, dtype=int) 
 print()
   
 ############################################################################################################
@@ -183,7 +182,7 @@ def add_eval_to_df(df_eval,split,train_data,test_data,metric_values,metric_name,
     fill_data.append([train_data] * num_genes)
     fill_data.append([test_data] * num_genes)
     fill_data.append([split] * num_genes)
-    fill_data.append(['LINCS'] * num_genes)
+    fill_data.append(['%s'%genesplit] * num_genes)
     fill_data.append([metric_name] * num_genes)
     if make_list == 'yes':
         metric_values = list(metric_values)
