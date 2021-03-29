@@ -1,5 +1,5 @@
 # Expresto
-This repository contains data and code to generate the results and reproduce the figures and tables found in [_A Flexible, Interpretable, and Accurate Approach for Imputing the Expression of Unmeasured Genes_](https://www.biorxiv.org/content/10.1101/2020.03.30.016675v1.abstract) (submitted for review). This work introduces a new method for imputing gene expression. The method introduced, SampleLASSO, uses the LASSO machine learning algorithm in a way that captures context specific biologically relevant information to guide imputation. 
+This repository contains data and code to generate the results and reproduce the figures and tables found in [_A Flexible, Interpretable, and Accurate Approach for Imputing the Expression of Unmeasured Genes_](https://doi.org/10.1093/nar/gkaa881), published in _Nucleic Acids Research_. This work introduces a new method for imputing gene expression. The method introduced, _SampleLASSO_, uses the LASSO machine learning algorithm in a way that captures context specific biologically relevant information to guide imputation. 
 
 This repo provides: 
 1. The data, results, and figures presented in the manuscript.
@@ -94,12 +94,14 @@ See [LICENSE.md](https://github.com/krishnanlab/Expresto/blob/master/LICENSE.md)
 
 ### Citation
 If you use this work, please cite:  
-`To be added later`
+**A flexible, interpretable, and accurate approach for imputing the expression of unmeasured genes**  
+Nucleic Acids Research, 48:e125 https://doi.org/10.1093/nar/gkaa881
 
 ### Authors
 Christopher A Mancuso#, Jake Canfield#, Deepak Singla, Arjun Krishnan*
 
-/# These authors are joint first authors, and /* general correspondence should be addressed to AK at arjun@msu.edu.
+>\# These authors are joint first authors.  
+>\* General correspondence should be addressed to AK at arjun@msu.edu.
 
 ### Funding
 This work was primarily supported by US National Institutes of Health (NIH) grants R35 GM128765 to AK and in part by MSU start-up funds to AK and NIH F32 Fellowship F32GM134595 for CM.
