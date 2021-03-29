@@ -94,8 +94,7 @@ See [LICENSE.md](https://github.com/krishnanlab/Expresto/blob/master/LICENSE.md)
 
 ### Citation
 If you use this work, please cite:  
-**A flexible, interpretable, and accurate approach for imputing the expression of unmeasured genes**  
-Nucleic Acids Research, 48:e125 https://doi.org/10.1093/nar/gkaa881
+Mancuso CA, Canfield JL, Singla D, Krishnan A (2020) **A flexible, interpretable, and accurate approach for imputing the expression of unmeasured genes.** _Nucleic Acids Research_, 48:e125 https://doi.org/10.1093/nar/gkaa881.
 
 ### Authors
 Christopher A Mancuso#, Jake Canfield#, Deepak Singla, Arjun Krishnan*
