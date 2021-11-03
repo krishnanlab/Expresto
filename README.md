@@ -37,7 +37,7 @@ The parallelization of the code was tested with Slurm on the high performance co
 1. `main.py`: Main script that generates imputed values
 2. `main_utls.py`: Helper function for main.py
 3. `main_slurm.py`: A python script that will submit numerous jobs through slurm
-4. `run_GeneKNN_val_jobs.sh`, `run_GeneLasso_val_job.sh`, `run_SampleKNN_val_jobs.sh`, `run_SampleLasso_val_job.sh` are scripts that start running the relevant jobs.
+4. `run_GeneKNN_val_jobs.sh`, `run_GeneLasso_val_job.sh`, `run_SampleKNN_val_jobs.sh`, `run_SampleLasso_val_job.sh`. `run_test_jobs.sh` are scripts that start running the relevant jobs.
 5. `main_knitting.py`: Combines all predictions for one hyperparameter set into one file
 6. `main_evalautions.py`: Makes a file that has evaluations for different metrics
 
